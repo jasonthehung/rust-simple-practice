@@ -2,6 +2,18 @@
 // ! https://practice.rs/collections/hashmap.html#basic-operations
 use std::collections::HashMap;
 
+#[derive(Debug, PartialEq, Eq, Hash)]
+struct Person {
+    name: String,
+}
+
+#[derive(Debug)]
+struct PhoneNumber {
+    country_code: u8,
+    area_code: u8,
+    digits: u8,
+}
+
 #[cfg(test)]
 mod test {
     use std::vec;
@@ -97,6 +109,66 @@ mod test {
         }
 
         println!("Key: {:?}", vikings.keys());
+    }
+
+    #[test]
+    fn test_basic_operation_5() {
+        let teams = vec![
+            String::from("Blue"),
+            String::from("Red"),
+            String::from("Green"),
+        ];
+
+        let initial_score = vec![10, 50, 60];
+
+        // * 這也是一種產生HashMap的方式
+        let mut scores: HashMap<_, _> = teams.into_iter().zip(initial_score.into_iter()).collect();
+    }
+
+    #[test]
+    fn test_basic_operation_6() {
+        let text = "hello world wonderful world";
+
+        let mut map = HashMap::new();
+
+        for word in text.split_whitespace() {
+            let count = map.entry(word).or_insert(0);
+            *count += 1;
+        }
+    }
+
+    #[test]
+    fn use_custom_struct_as_key() {
+        let mut map = HashMap::new();
+        let jason = Person {
+            name: String::from("Jason"),
+        };
+
+        let kevin = Person {
+            name: String::from("kevin"),
+        };
+
+        map.insert(
+            jason,
+            PhoneNumber {
+                country_code: 1,
+                area_code: 99,
+                digits: 131,
+            },
+        );
+
+        map.insert(
+            kevin,
+            PhoneNumber {
+                country_code: 1,
+                area_code: 99,
+                digits: 131,
+            },
+        );
+
+        for (key, value) in &map {
+            println!("{:?}: {:?}", key, value);
+        }
     }
 
     #[test]
