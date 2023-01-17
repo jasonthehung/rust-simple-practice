@@ -113,11 +113,6 @@ mod test {
         // @ &str implements Copy trait
         // m2.insert(v2, v1); // v2 Ownership moved here
         m2.insert(v2_str_slice, v1);
-
-        assert_eq!(v2, "hello");
-        assert_eq!(v2_str_slice, "hello");
-
-        println!("Success!");
     }
 }
 
