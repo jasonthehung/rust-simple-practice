@@ -11,6 +11,14 @@ name = "hashmap"
 version = "0.1.0"
 
 [[package]]
+name = "impl-fromstr"
+version = "0.1.0"
+
+[[package]]
+name = "lifetimes"
+version = "0.1.0"
+
+[[package]]
 name = "modules"
 version = "0.1.0"
 
@@ -20,4 +28,8 @@ version = "0.1.0"
 
 [[package]]
 name = "string"
+version = "0.1.0"
+
+[[package]]
+name = "structs"
 version = "0.1.0"

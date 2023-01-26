@@ -1,3 +1,13 @@
 [workspace]
 
-members = ["hashmap", "string", "modules_", "crates_","mutable_reference"]
+members = [
+    "hashmap",
+    "string",
+    "modules_",
+    "crates_",
+    "mutable_reference",
+    "lifetimes",
+    "structs",
+
+    "traits/impl-fromstr"    
+]
