@@ -9,5 +9,7 @@ members = [
     "lifetimes",
     "structs",
 
-    "traits/impl-fromstr"    
+    "traits/impl-fromstr",
+
+    "weak_references"
 ]
