@@ -8,8 +8,8 @@ members = [
     "mutable_reference",
     "lifetimes",
     "structs",
+    "iterators",
+    "weak_references",
 
-    "traits/impl-fromstr",
-
-    "weak_references"
+    "traits/impl-fromstr",    
 ]
