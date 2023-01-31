@@ -1,15 +1,8 @@
-[workspace]
+[package]
+name = "rust-simple-practices"
+version = "0.1.0"
+edition = "2021"
 
-members = [
-    "hashmap",
-    "string",
-    "modules_",
-    "crates_",
-    "mutable_reference",
-    "lifetimes",
-    "structs",
-    "iterators",
-    "weak_references",
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-    "traits/impl-fromstr",    
-]
+[dependencies]

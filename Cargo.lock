@@ -3,41 +3,5 @@
 version = 3
 
 [[package]]
-name = "crates_"
-version = "0.1.0"
-
-[[package]]
-name = "hashmap"
-version = "0.1.0"
-
-[[package]]
-name = "impl-fromstr"
-version = "0.1.0"
-
-[[package]]
-name = "iterators"
-version = "0.1.0"
-
-[[package]]
-name = "lifetimes"
-version = "0.1.0"
-
-[[package]]
-name = "modules"
-version = "0.1.0"
-
-[[package]]
-name = "mutable_reference"
-version = "0.1.0"
-
-[[package]]
-name = "string"
-version = "0.1.0"
-
-[[package]]
-name = "structs"
-version = "0.1.0"
-
-[[package]]
-name = "weak_references"
+name = "rust-simple-practices"
 version = "0.1.0"
