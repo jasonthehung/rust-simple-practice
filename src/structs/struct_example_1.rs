@@ -31,7 +31,7 @@ mod test {
             String::from("0902131527"),
         );
 
-        println!("{:?}", person);
+        println!("{:#?}", person);
     }
 
     #[test]
